@@ -12,7 +12,7 @@ vet:
 dev:
 	DEBUG=1 \
 	BUCKET_NAME=komiic \
-	FILE_NAME=000001.jpg.webp \
+	AMQP_LISTEN_KEY=IMAGE_FILES \
 	go run main.go
 
 build: clean
